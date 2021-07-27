@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default (props) => {
+export default props => {
     return(
-        <div className="input-field col s12">
+        <div className={`input-field col s${props.colS}`}>
             <label htmlFor={props.labelFor}>{props.label}</label>
             {props.children}
         </div>
